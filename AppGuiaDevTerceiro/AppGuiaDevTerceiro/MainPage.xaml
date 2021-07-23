@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGuiaDevTerceiro.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Frame>
+                    <Image Source="logo_etec" />
+                </Frame>
+
+                <Frame>
+                    <ScrollView>
+                        <StackLayout>                        
+                            <Button Text="Inicial" Clicked="Button_Clicked_Inicial" />
+                            <Button Text="Banco de Dados" Clicked="Button_Clicked_Bd" />
+                            <Button Text="Programação Web" Clicked="Button_Clicked_ProgWeb" />
+                            <Button Text="Design Digital" Clicked="Button_Clicked_Dd" />
+                            <Button Text="Programação Mobile" Clicked="Button_Clicked_ProgMobile" />
+                            <Button Text="Sistemas Operacionais" Clicked="Button_Clicked_So" />
+                            <Button Text="Redes de Computadores" Clicked="Button_Clicked_Rc" />
+                            <Button Text="Segurança Digital" Clicked="Button_Clicked_Sd" />
+                            <Button Text="Contato" Clicked="Button_Clicked_Contato" />                        
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+                
+            </StackLayout>            
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
